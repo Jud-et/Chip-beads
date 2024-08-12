@@ -1,24 +1,12 @@
 import React from 'react';
 import Carousel from '../components/Carousel';
 import SmartSearch from '../components/SmartSearch';
+import Header from '../components/Header';
 
 const HomePage: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-100">
-      {/* Navigation Bar */}
-      <header className="bg-white shadow fixed w-full z-10">
-        <div className="container mx-auto p-4 flex justify-between items-center">
-          <h1 className="text-2xl font-bold text-gray-800">Bead Store</h1>
-          <nav>
-            <ul className="flex space-x-4">
-              <li><a href="#" className="text-gray-600 hover:text-blue-500">Home</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-blue-500">Shop</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-blue-500">About</a></li>
-              <li><a href="#" className="text-gray-600 hover:text-blue-500">Contact</a></li>
-            </ul>
-          </nav>
-        </div>
-      </header>
+      <Header />
 
       {/* Main Content */}
       <main className="container mx-auto pt-20 p-4">
